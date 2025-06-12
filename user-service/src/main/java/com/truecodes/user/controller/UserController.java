@@ -21,5 +21,10 @@ public class UserController {
     public ResponseEntity<UserDto> getDetails(@PathVariable String contactNumber) {
         return ResponseEntity.ok(service.getByContact(contactNumber));
     }
+
+    @GetMapping("/details/{contactNumber}")
+    public ResponseEntity<UserDto> getDetails(@PathVariable String contactNumber) {
+        return ResponseEntity.ok(service.getByContact(contactNumber));
+    }
 }
 
