@@ -18,4 +18,6 @@ public class AuthController {
     public ResponseEntity<String> generateToken(@RequestParam String username) {
         return ResponseEntity.ok(authService.generateToken(username));
     }
+
+
 }
