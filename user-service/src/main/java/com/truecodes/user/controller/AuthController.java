@@ -13,7 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthController {
     @Autowired
     private AuthService authService;
-
+    @Autowired
+    private AuthService authService;
+    @Autowired
+    private AuthService authService;
     @GetMapping
     public ResponseEntity<String> generateToken(@RequestParam String username) {
         return ResponseEntity.ok(authService.generateToken(username));
